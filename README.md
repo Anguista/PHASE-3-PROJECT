@@ -5,7 +5,7 @@
 # OVERVIEW.
 Customer churn is a significant challenge in the telecommunications industry, where companies like SyriaTel face financial losses from customers who discontinue their services. This project aims to build a binary classification model that predicts whether a customer is likely to churn. The insights derived from this model will help SyriaTel proactively identify at-risk customers and implement targeted retention strategies, reducing churn rates and improving long-term revenue.
 
-## BUSINESS UNDERSTANDING.
+# BUSINESS UNDERSTANDING.
 ### Objective:
 SyriaTel, a telecommunications company, is facing significant revenue losses due to customer churn. Retaining existing customers is more cost-effective than acquiring new ones. The goal of this project is to build a binary classification model to predict whether a customer will churn. This will enable SyriaTel to:
 1.	Identify at-risk customers early.
@@ -18,7 +18,7 @@ Key Business Questions:
 3.	How accurately can the model predict customer churn, enabling timely interventions?
 
 
-## DATA UNDERSTANDING.
+# DATA UNDERSTANDING.
 ### Dataset Overview:
 The dataset, sourced from Kaggle, contains historical information on SyriaTel customers, covering demographics, usage patterns, account details, and support interactions. Key components include:
 1.	Target Variable:
@@ -37,7 +37,7 @@ The dataset, sourced from Kaggle, contains historical information on SyriaTel cu
 * Do demographic or account-related features differentiate churners from non-churners?
 * How influential are customer support interactions in churn prediction? 
 
-## DATA PREPARATION.
+# DATA PREPARATION.
 ### Objective:
 To ensure the dataset is clean, transformed, and ready for modeling by addressing quality issues and engineering relevant features to ensure compatibility with the chosen models and improve prediction accuracy.
 ### 1.	Data Cleaning:
@@ -59,7 +59,7 @@ To ensure the dataset is clean, transformed, and ready for modeling by addressin
 *	Split the dataset into training (80%) and test (20%) subsets to evaluate model performance on unseen data.
 
 
-## MODELING.
+# MODELING.
 ### Objective: Develop and compare machine learning models to predict customer churn, starting with a base model and progressing to more advanced techniques.
 ### 1.	Model Selection:
 *	Base Model: Logistic Regression for simplicity and interpretability.
@@ -77,7 +77,7 @@ o	Apply cross-validation to optimize hyperparameters and avoid overfitting.
 *	Primary Metric: Accuracy to measure overall performance.
 *	Complementary Metrics: Precision, recall, F1-score, and ROC-AUC for a more comprehensive evaluation, especially in the case of class imbalance.
 
-## EVALUATION.
+# EVALUATION.
 ### Objective: Assess model performance and ensure it meets business requirements.
 ### 1.	Evaluate Test Set Performance:
 *	Measure accuracy, precision, recall, F1-score, and ROC-AUC on the test set.
