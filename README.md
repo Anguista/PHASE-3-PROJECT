@@ -5,15 +5,15 @@
 
 ---
 
-### **OVERVIEW**
+### **OVERVIEW.**
 
 Customer churn is a significant challenge in the telecommunications industry, where companies like SyriaTel face financial losses due to customers discontinuing their services. This project focuses on developing a binary classification model to predict whether a customer is likely to churn. The insights derived from this model will empower SyriaTel to proactively identify at-risk customers, implement targeted retention strategies, reduce churn rates, and improve long-term revenue.
 
 ---
 
-### **BUSINESS UNDERSTANDING**
+### **BUSINESS UNDERSTANDING.**
 
-#### **Objective**
+#### **Objective.**
 
 SyriaTel is experiencing revenue losses due to customer attrition. Retaining existing customers is more cost-effective than acquiring new ones. The primary objective of this project is to develop a binary classification model to predict customer churn. The model will allow SyriaTel to:  
 1. Identify customers at risk of churning early.  
@@ -21,16 +21,16 @@ SyriaTel is experiencing revenue losses due to customer attrition. Retaining exi
 3. Enhance customer satisfaction and loyalty.  
 4. Minimize revenue losses caused by churn.  
 
-#### **Key Business Questions**  
+#### **Key Business Questions.**  
 1. What are the main factors influencing customer churn?  
 2. How can these factors be leveraged to design effective retention strategies?  
 3. How accurately can the model predict customer churn, enabling timely interventions?  
 
 ---
 
-### **DATA UNDERSTANDING**
+### **DATA UNDERSTANDING.**
 
-#### **Dataset Overview**  
+#### **Dataset Overview.**  
 
 The dataset consists of 20 columns covering customer account details, usage patterns, customer support interactions, and churn status.  
 
@@ -47,7 +47,7 @@ service_usage_metrics = ['total day minutes', 'total day calls', 'total day char
         'voice mail plan', 'number vmail messages']
 - customer_support_interactions = ['customer service calls']
 
-#### **Initial Observations**  
+#### **Initial Observations.**  
 - **Class imbalance**: Fewer churn cases compared to non-churn cases, requiring techniques like class weighting or resampling during modeling.  
 - **Mixed data types**: Numerical and categorical features require preprocessing for compatibility with machine learning models.  
 - **No missing values detected**, but potential outliers exist in numerical features.  
@@ -58,9 +58,9 @@ service_usage_metrics = ['total day minutes', 'total day calls', 'total day char
 - What role do customer service interactions play in churn prediction?  
 
 
-### **DATA PREPARATION**
+### **DATA PREPARATION.**
 
-#### **Objective**  
+#### **Objective.**  
 To clean and transform the data for modeling by addressing quality issues, standardizing variables, and engineering new features.  
 
 1. **Data Cleaning**:  
@@ -74,7 +74,7 @@ To clean and transform the data for modeling by addressing quality issues, stand
 
 3. **Feature Transformation**:  
    - Standardize numerical features using a `StandardScaler` for models sensitive to scale.  
-   - Encode categorical variables using one-hot encoding.  
+   - Encode categorical variables using binary encoding.  
 
 4. **Feature Engineering**:  
    - Create new features like:  
@@ -92,9 +92,9 @@ To clean and transform the data for modeling by addressing quality issues, stand
 
 ---
 
-### **MODELING**
+### **MODELING.**
 
-#### **Objective**  
+#### **Objective.**  
 To develop and evaluate machine learning models for churn prediction.  
 
 1. **Model Selection**:  
@@ -116,9 +116,9 @@ To develop and evaluate machine learning models for churn prediction.
 
 ---
 
-### **EVALUATION**
+### **EVALUATION.**
 
-#### **Objective**  
+#### **Objective.**  
 To assess the model’s performance and ensure it meets business requirements.  
 
 1. **Evaluate Test Set Performance**:  
@@ -141,13 +141,20 @@ To assess the model’s performance and ensure it meets business requirements.
    - Deploy the best-performing model (Random Forest) in a production environment.  
    - Monitor model performance over time and retrain as needed.
 
+## **Summary and justification of the Machine Learning Models used: Logistic Regression, Decision Trees and Random Forest.**
+After evaluating the performance of the models, the **Random Forest** clearly stands out as the best
+ choice due to its superior overall performance. With the highest accuracy (94.12%) and AUC-ROC (0.93), it demonstrates an exceptional ability to differentiate between churn and non-churn customers. Notably, the model achieves a precision of 0.97 for predicting churn (Class 1), ensuring that customers identified as likely to churn are highly accurate. Although its recall for churn predictions (0.62) is moderate, its robustness and high precision make it particularly suitable for scenarios where minimizing false positives is less critical than accurately identifying true churners.
+
+In comparison, **Logistic Regression** provides simplicity and interpretability but underperforms with a lower accuracy of 80.58% and precision of 0.42 for churn prediction, leading to a higher rate of false positives. Similarly, the **Decision Tree** performs better than Logistic Regression in balancing precision and recall; however, its accuracy (90.53%) and AUC-ROC (0.81) remain lower than those of Random Forest. Additionally, Decision Trees are susceptible to overfitting, which could impact their reliability without extensive tuning.
+
+Considering the business goal of reducing customer churn, the **Random Forest** model is the most reliable and effective option. Its ability to maintain a strong balance between precision, recall, and accuracy makes it an ideal candidate for deployment, ensuring that actionable insights can be derived with confidence while minimizing the risk of misclassification.
 
 ## **Conclusion.**
 The deployed Random Forest model demonstrates strong performance in predicting customer churn, as indicated by the evaluation metrics. The model achieved an **accuracy of 94%**, reflecting its ability to correctly classify both churn and non-churn customers in the majority of cases. A **precision score of 97%** shows that when the model predicts a customer will churn, it is highly likely to be correct. However, the **recall score of 62%** indicates that the model identified 62% of actual churn cases, leaving room for improvement in capturing more customers at risk of leaving. The **AUC-ROC score of 0.93** highlights the model's excellent ability to distinguish between churners and non-churners.
 
 The analysis identified **38 high-risk customers** with a churn probability greater than 70%, providing actionable insights for the business. These high-risk customers have been saved to a file (`high_risk_customers.csv`) for further use by the retention team.
 
-
+## **Recommendations.**
 **Retention Strategies**:
    - Focus on the identified high-risk customers with personalized retention strategies. For instance, targeted campaigns, loyalty rewards, or discounts can help retain these customers.
    - Conduct surveys or feedback sessions with high-risk customers to understand their pain points and address their concerns.
@@ -169,7 +176,6 @@ The analysis identified **38 high-risk customers** with a churn probability grea
    - Leverage the list of high-risk customers to estimate the potential revenue loss and savings from retention campaigns. Use this to justify investment in retention efforts and continuous model improvement.
 
 By implementing these recommendations, the business can effectively reduce churn rates and improve customer satisfaction, ultimately enhancing overall revenue and brand loyalty.
-
 
 
 
