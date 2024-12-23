@@ -149,12 +149,12 @@ In comparison, **Logistic Regression** provides simplicity and interpretability 
 
 Considering the business goal of reducing customer churn, the **Random Forest** model is the most reliable and effective option. Its ability to maintain a strong balance between precision, recall, and accuracy makes it an ideal candidate for deployment, ensuring that actionable insights can be derived with confidence while minimizing the risk of misclassification.
 
-## **Conclusion.**
+## **CONCLUSION.**
 The deployed Random Forest model demonstrates strong performance in predicting customer churn, as indicated by the evaluation metrics. The model achieved an **accuracy of 94%**, reflecting its ability to correctly classify both churn and non-churn customers in the majority of cases. A **precision score of 97%** shows that when the model predicts a customer will churn, it is highly likely to be correct. However, the **recall score of 62%** indicates that the model identified 62% of actual churn cases, leaving room for improvement in capturing more customers at risk of leaving. The **AUC-ROC score of 0.93** highlights the model's excellent ability to distinguish between churners and non-churners.
 
 The analysis identified **38 high-risk customers** with a churn probability greater than 70%, providing actionable insights for the business. These high-risk customers have been saved to a file (`high_risk_customers.csv`) for further use by the retention team.
 
-## **Recommendations.**
+## **RECOMMENDATIONS.**
 **Retention Strategies**:
    - Focus on the identified high-risk customers with personalized retention strategies. For instance, targeted campaigns, loyalty rewards, or discounts can help retain these customers.
    - Conduct surveys or feedback sessions with high-risk customers to understand their pain points and address their concerns.
