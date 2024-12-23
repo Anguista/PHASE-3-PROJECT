@@ -94,7 +94,7 @@ To ensure the dataset is clean, transformed, and ready for modeling by addressin
 ### **MODELING.**
 
 #### **Objective.**  
-To develop and evaluate machine learning models for churn prediction.  
+Develop and compare machine learning models to predict customer churn, starting with a base model and progressing to more advanced techniques.
 
 1. **Model Selection**:  
    - **Baseline Model**: Logistic Regression for simplicity and interpretability.  
