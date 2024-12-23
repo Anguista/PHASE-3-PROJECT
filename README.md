@@ -174,11 +174,11 @@ By implementing these recommendations, the business can effectively reduce churn
 
 ![Screenshot](Project%20Images/Screenshot%202024-12-24%20014035.png)
 ![Screenshot](Project%20Images/Screenshot%202024-12-24%20014435.png)
-![Screenshot 1](Project%20Images/Screenshot%202024-12-24%20014552.png)
-![Screenshot 2](Project%20Images/Screenshot%202024-12-24%20014740.png)
-![Screenshot 3](Project%20Images/Screenshot%202024-12-24%20014919.png)
-![Screenshot 4](Project%20Images/Screenshot%202024-12-24%20015115.png)
-![Screenshot 5](Project%20Images/Screenshot%202024-12-24%20015404.png)
+![Screenshot](Project%20Images/Screenshot%202024-12-24%20014552.png)
+![Screenshot](Project%20Images/Screenshot%202024-12-24%20014740.png)
+![Screenshot](Project%20Images/Screenshot%202024-12-24%20014919.png)
+![Screenshot](Project%20Images/Screenshot%202024-12-24%20015115.png)
+![Screenshot](Project%20Images/Screenshot%202024-12-24%20015404.png)
 
 
 
