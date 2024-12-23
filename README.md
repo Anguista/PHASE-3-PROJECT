@@ -84,10 +84,8 @@ To ensure the dataset is clean, transformed, and ready for modeling by addressin
      - **Customer service call frequency**: Number of calls normalized by account length.  
 
 5. **Class Imbalance Handling**:  
-   - Apply techniques such as:  
-     - Adjusting class weights.  
-     - Oversampling the minority class using SMOTE or undersampling the majority class.  
-
+  - Adjusting class weights or winsorization.
+   
 6. **Data Splitting**:  
    - Split the dataset into training (75%) and test (25%) subsets for evaluation.  
 
@@ -106,12 +104,8 @@ To develop and evaluate machine learning models for churn prediction.
    - Train each model on the training dataset.  
    - Apply cross-validation to tune hyperparameters and avoid overfitting.  
 
-3. **Hyperparameter Tuning**:  
-   - **Logistic Regression**: Optimize regularization parameters (L1, L2 penalties).  
-   - **Decision Tree**: Tune parameters such as `max_depth`, `min_samples_split`, and `min_samples_leaf`.  
-   - **Random Forest**: Adjust the number of trees and `max_features` to improve performance.  
 
-4. **Evaluation Metrics**:  
+3. **Evaluation Metrics**:  
    - **Primary Metric**: Accuracy to assess overall performance.  
    - **Complementary Metrics**: Precision, recall, F1-score, and ROC-AUC to provide a comprehensive evaluation, particularly for handling class imbalance.  
 
