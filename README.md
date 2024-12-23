@@ -38,7 +38,7 @@ The dataset consists of 20 columns covering customer account details, usage patt
    - **Churn**: A binary variable indicating whether a customer has churned (1) or not (0).  
 
 2. **Predictor Variables**:  
-   - customer_demographics = ['account length']
+- customer_demographics = ['account length']
 service_usage_metrics = ['total day minutes', 'total day calls', 'total day charge',
         'total eve minutes', 'total eve calls', 'total eve charge',
         'total night minutes', 'total night calls', 'total night charge',
