@@ -32,7 +32,10 @@ SyriaTel is experiencing revenue losses due to customer attrition. Retaining exi
 
 #### **Dataset Overview.**  
 
-The dataset consists of 20 columns covering customer account details, usage patterns, customer support interactions, and churn status.  
+The dataset, sourced from Kaggle, contains historical information on SyriaTel customers, covering demographics, usage patterns, account details, support interactions and churn status.
+The dataset consists of 20 columns and 3333 rows. 
+![image](https://github.com/user-attachments/assets/500a084e-7b35-47ac-a204-c14ff392c886)
+
 
 1. **Target Variable**:  
    - **Churn**: A binary variable indicating whether a customer has churned (1) or not (0).  
