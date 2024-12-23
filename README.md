@@ -62,7 +62,7 @@ service_usage_metrics = ['total day minutes', 'total day calls', 'total day char
 ### **DATA PREPARATION.**
 
 #### **Objective.**  
-To clean and transform the data for modeling by addressing quality issues, standardizing variables, and engineering new features.  
+To ensure the dataset is clean, transformed, and ready for modeling by addressing quality issues and engineering relevant features to ensure compatibility with the chosen models and improve prediction accuracy.
 
 1. **Data Cleaning**:  
    - Handle missing numerical values with imputation (none detected in this dataset).  
