@@ -172,15 +172,6 @@ The analysis identified **38 high-risk customers** with a churn probability grea
 
 By implementing these recommendations, the business can effectively reduce churn rates and improve customer satisfaction, ultimately enhancing overall revenue and brand loyalty.
 
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20014035.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20014435.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20014552.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20014740.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20014919.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20015115.png)
-![Screenshot](Project%20Images/Screenshot%202024-12-24%20015404.png)
-
-
 
 
 
